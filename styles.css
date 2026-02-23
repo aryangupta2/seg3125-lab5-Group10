@@ -51,6 +51,12 @@ html {
   transition: all 0.2s ease;
 }
 
+/* Muted placeholder text */
+.form-control::placeholder {
+  color: #b0b0b0;
+  opacity: 1;
+}
+
 /* Smooth transition on all form controls */
 .form-control,
 .form-select {
