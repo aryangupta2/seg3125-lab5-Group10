@@ -25,8 +25,9 @@
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#services"><i class="bi bi-wrench me-1"></i>Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#team"><i class="bi bi-people me-1"></i>Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team"><i class="bi bi-people me-1"></i>Experts</a></li>
           <li class="nav-item"><a class="nav-link" href="#booking"><i class="bi bi-calendar-check me-1"></i>Book Now</a></li>
+          <li class="nav-item"><a class="nav-link" href="#payment-section"><i class="bi bi-credit-card me-1"></i>Payment</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-geo-alt me-1"></i>Contact</a></li>
         </ul>
       </div>
@@ -39,7 +40,7 @@
       <h1 class="display-4 fw-bold mb-3"><i class="bi bi-bicycle me-2"></i>ChainLink Bikes</h1>
       <p class="lead mb-4">Ottawa's trusted bicycle repair shop since 2012.</p>
       <a href="#booking" class="btn btn-warning btn-lg fw-semibold">
-        Book Our Services
+        <i class="bi bi-tools me-2"></i>Book Our Services
       </a>
     </div>
   </header>
@@ -73,7 +74,7 @@
       <div class="row g-4">
         <!-- Brake Repair -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm service-card">
             <img src="https://images.unsplash.com/photo-1727281624958-fa9734ea4160?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                  class="card-img-top" alt="Close-up of a bicycle disc brake and rotor">
             <div class="card-body">
@@ -86,7 +87,7 @@
               </ul>
             </div>
             <div class="card-footer d-flex justify-content-between align-items-center">
-              <span class="badge bg-warning text-dark fs-6">$45</span>
+              <span class="badge bg-warning text-dark fs-6"><i class="bi bi-tag-fill me-1"></i>$45</span>
               <small class="text-muted"><i class="bi bi-clock me-1"></i>~40 min</small>
             </div>
           </div>
@@ -94,7 +95,7 @@
 
         <!-- Puncture Repair -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm service-card">
             <img src="https://images.unsplash.com/photo-1673870861524-64d3d07141e6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                  class="card-img-top" alt="Bicycle wheel and tire showing rubber tread detail">
             <div class="card-body">
@@ -107,7 +108,7 @@
               </ul>
             </div>
             <div class="card-footer d-flex justify-content-between align-items-center">
-              <span class="badge bg-warning text-dark fs-6">$25</span>
+              <span class="badge bg-warning text-dark fs-6"><i class="bi bi-tag-fill me-1"></i>$25</span>
               <small class="text-muted"><i class="bi bi-clock me-1"></i>~20 min</small>
             </div>
           </div>
@@ -115,7 +116,7 @@
 
         <!-- Full Tune-Up -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card h-100 shadow-sm service-card">
             <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=600&h=400&fit=crop&crop=center"
                  class="card-img-top" alt="Complete bicycle showing full drivetrain and gears">
             <div class="card-body">
@@ -128,7 +129,7 @@
               </ul>
             </div>
             <div class="card-footer d-flex justify-content-between align-items-center">
-              <span class="badge bg-warning text-dark fs-6">$95</span>
+              <span class="badge bg-warning text-dark fs-6"><i class="bi bi-tag-fill me-1"></i>$95</span>
               <small class="text-muted"><i class="bi bi-clock me-1"></i>~60 min</small>
             </div>
           </div>
@@ -137,48 +138,51 @@
     </div>
   </section>
 
-  <!-- ====== TEAM ====== -->
+  <!-- ====== TEAM / EXPERTS ====== -->
   <section id="team" class="py-5 bg-white">
     <div class="container">
-      <h2 class="text-center fw-bold mb-2"><i class="bi bi-people me-2"></i>Meet Our Mechanics</h2>
+      <h2 class="text-center fw-bold mb-2"><i class="bi bi-people-fill me-2"></i>Meet Our Experts</h2>
       <p class="text-center text-muted mb-4">Certified experts who treat every bike like their own.</p>
 
       <div class="row g-4 justify-content-center">
         <!-- Mechanic 1 -->
         <div class="col-12 col-sm-6 col-lg-4">
-          <div class="card h-100 text-center shadow-sm">
+          <div class="card h-100 text-center shadow-sm expert-card">
             <div class="card-body">
               <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
                    alt="Portrait of Mark Dupont" class="rounded-circle mb-3 team-photo">
-              <h5 class="card-title mb-1">Mark Dupont</h5>
+              <h5 class="card-title mb-1"><i class="bi bi-person-badge me-1 text-warning"></i>Mark Dupont</h5>
               <p class="text-warning fw-semibold mb-2"><i class="bi bi-star-fill me-1"></i>Head Mechanic</p>
               <p class="card-text text-muted small">15 years of experience; Shimano & SRAM certified</p>
+              <p class="card-text text-muted small"><i class="bi bi-calendar-x text-danger me-1"></i>Off on: <strong>Wednesday</strong></p>
             </div>
           </div>
         </div>
 
         <!-- Mechanic 2 -->
         <div class="col-12 col-sm-6 col-lg-4">
-          <div class="card h-100 text-center shadow-sm">
+          <div class="card h-100 text-center shadow-sm expert-card">
             <div class="card-body">
               <img src="https://images.unsplash.com/photo-1549351512-c5e12b11e283?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                    alt="Portrait of Sarah Drake" class="rounded-circle mb-3 team-photo">
-              <h5 class="card-title mb-1">Sarah Drake</h5>
+              <h5 class="card-title mb-1"><i class="bi bi-person-badge me-1 text-warning"></i>Sarah Drake</h5>
               <p class="text-warning fw-semibold mb-2"><i class="bi bi-star-fill me-1"></i>Wheel Specialist</p>
               <p class="card-text text-muted small">Master wheel builder with 8 years in the trade</p>
+              <p class="card-text text-muted small"><i class="bi bi-calendar-x text-danger me-1"></i>Off on: <strong>Monday</strong></p>
             </div>
           </div>
         </div>
 
         <!-- Mechanic 3 -->
         <div class="col-12 col-sm-6 col-lg-4">
-          <div class="card h-100 text-center shadow-sm">
+          <div class="card h-100 text-center shadow-sm expert-card">
             <div class="card-body">
               <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                    alt="Portrait of James Martin" class="rounded-circle mb-3 team-photo">
-              <h5 class="card-title mb-1">James Martin</h5>
+              <h5 class="card-title mb-1"><i class="bi bi-person-badge me-1 text-warning"></i>James Martin</h5>
               <p class="text-warning fw-semibold mb-2"><i class="bi bi-star-fill me-1"></i>E-Bike Technician</p>
               <p class="card-text text-muted small">Expert in e-bike systems; Motors, batteries, & diagnostics</p>
+              <p class="card-text text-muted small"><i class="bi bi-calendar-x text-danger me-1"></i>Off on: <strong>Friday</strong></p>
             </div>
           </div>
         </div>
@@ -196,55 +200,111 @@
         <div class="col-12 col-lg-8">
           <div class="card shadow-sm">
             <div class="card-body p-4">
-              <form action="#confirmation" method="get">
+              <form id="bookingForm" novalidate>
 
                 <!-- Step 1: Service -->
                 <fieldset class="mb-4">
                   <legend class="h5 fw-bold border-bottom pb-2 mb-3">
-                    <span class="badge bg-warning text-dark me-2">1</span>Choose a Service
+                    <span class="badge bg-warning text-dark me-2">1</span><i class="bi bi-wrench me-1"></i>Choose a Service
                   </legend>
 
-                  <div class="form-check mb-2" title="Pad replacement, cable adjustment, hydraulic bleed, and rotor truing">
+                  <div class="form-check mb-2" data-bs-toggle="tooltip" data-bs-placement="right" title="Includes pad replacement, cable adjustment, hydraulic bleed, and rotor truing">
                     <input class="form-check-input" type="radio" name="service" id="svc-brake" value="Brake Repair - $45" required>
                     <label class="form-check-label" for="svc-brake">
                       <i class="bi bi-disc text-warning me-1"></i><strong>Brake Repair</strong> — $45
                     </label>
                   </div>
 
-                  <div class="form-check mb-2" title="Tube patching, tire inspection, and tube replacement">
+                  <div class="form-check mb-2" data-bs-toggle="tooltip" data-bs-placement="right" title="Includes tube patching, tire inspection, and tube replacement">
                     <input class="form-check-input" type="radio" name="service" id="svc-puncture" value="Puncture Repair - $25">
                     <label class="form-check-label" for="svc-puncture">
                       <i class="bi bi-bullseye text-warning me-1"></i><strong>Puncture Repair</strong> — $25
                     </label>
                   </div>
 
-                  <div class="form-check mb-2" title="Complete drivetrain overhaul, wheel truing, brake and derailleur adjustment">
+                  <div class="form-check mb-2" data-bs-toggle="tooltip" data-bs-placement="right" title="Includes complete drivetrain overhaul, wheel truing, brake and derailleur adjustment">
                     <input class="form-check-input" type="radio" name="service" id="svc-tuneup" value="Full Tune-Up - $95">
                     <label class="form-check-label" for="svc-tuneup">
                       <i class="bi bi-gear text-warning me-1"></i><strong>Full Tune-Up</strong> — $95
                     </label>
                   </div>
+
+                  <div class="invalid-feedback d-block" id="service-error" style="display:none !important;"></div>
                 </fieldset>
 
-                <!-- Step 2: Date & Time -->
+                <!-- Step 2: Choose Expert -->
                 <fieldset class="mb-4">
                   <legend class="h5 fw-bold border-bottom pb-2 mb-3">
-                    <span class="badge bg-warning text-dark me-2">2</span>Pick a Date &amp; Time
+                    <span class="badge bg-warning text-dark me-2">2</span><i class="bi bi-person-check me-1"></i>Choose Your Expert
                   </legend>
+
+                  <div class="row g-3">
+                    <div class="col-12 col-sm-4">
+                      <div class="form-check expert-select-card p-3 border rounded text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="Head Mechanic — 15 yrs experience. Off on Wednesdays.">
+                        <input class="form-check-input" type="radio" name="mechanic" id="mech-mark" value="Mark Dupont" data-offday="3" required>
+                        <label class="form-check-label d-block" for="mech-mark">
+                          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+                               alt="Mark Dupont" class="rounded-circle mb-2 team-photo-sm">
+                          <div class="fw-bold"><i class="bi bi-person-badge text-warning me-1"></i>Mark Dupont</div>
+                          <small class="text-muted">Head Mechanic</small><br>
+                          <small class="text-danger"><i class="bi bi-calendar-x me-1"></i>Off: Wed</small>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <div class="form-check expert-select-card p-3 border rounded text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="Wheel Specialist — 8 yrs experience. Off on Mondays.">
+                        <input class="form-check-input" type="radio" name="mechanic" id="mech-sarah" value="Sarah Drake" data-offday="1">
+                        <label class="form-check-label d-block" for="mech-sarah">
+                          <img src="https://images.unsplash.com/photo-1549351512-c5e12b11e283?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                               alt="Sarah Drake" class="rounded-circle mb-2 team-photo-sm">
+                          <div class="fw-bold"><i class="bi bi-person-badge text-warning me-1"></i>Sarah Drake</div>
+                          <small class="text-muted">Wheel Specialist</small><br>
+                          <small class="text-danger"><i class="bi bi-calendar-x me-1"></i>Off: Mon</small>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <div class="form-check expert-select-card p-3 border rounded text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="E-Bike Technician — Expert in e-bike systems. Off on Fridays.">
+                        <input class="form-check-input" type="radio" name="mechanic" id="mech-james" value="James Martin" data-offday="5">
+                        <label class="form-check-label d-block" for="mech-james">
+                          <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                               alt="James Martin" class="rounded-circle mb-2 team-photo-sm">
+                          <div class="fw-bold"><i class="bi bi-person-badge text-warning me-1"></i>James Martin</div>
+                          <small class="text-muted">E-Bike Tech</small><br>
+                          <small class="text-danger"><i class="bi bi-calendar-x me-1"></i>Off: Fri</small>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="invalid-feedback d-block" id="mechanic-error" style="display:none !important;"></div>
+                </fieldset>
+
+                <!-- Step 3: Date & Time -->
+                <fieldset class="mb-4">
+                  <legend class="h5 fw-bold border-bottom pb-2 mb-3">
+                    <span class="badge bg-warning text-dark me-2">3</span><i class="bi bi-calendar3 me-1"></i>Pick a Date &amp; Time
+                  </legend>
+
+                  <div class="alert alert-info small" id="date-hint" role="alert">
+                    <i class="bi bi-info-circle-fill me-2"></i>Please select a mechanic first to see available dates. Weekends and off-days are unavailable.
+                  </div>
 
                   <div class="row g-3">
                     <div class="col-12 col-sm-6">
                       <label for="booking-date" class="form-label fw-semibold">
                         <i class="bi bi-calendar3 text-warning me-1"></i>Date
                       </label>
-                      <input type="date" class="form-control" id="booking-date" name="date" required min="2026-02-13">
-                      <div class="form-text">We're open everyday.</div>
+                      <input type="date" class="form-control" id="booking-date" name="date" required
+                             data-bs-toggle="tooltip" data-bs-placement="top" title="Choose a weekday when your selected mechanic is available">
+                      <div class="form-text">Weekends & mechanic off-days are unavailable.</div>
+                      <div class="invalid-feedback" id="date-error">Please select a valid date.</div>
                     </div>
                     <div class="col-12 col-sm-6">
                       <label for="booking-time" class="form-label fw-semibold">
                         <i class="bi bi-clock text-warning me-1"></i>Time
                       </label>
-                      <select class="form-select" id="booking-time" name="time" required>
+                      <select class="form-select" id="booking-time" name="time" required
+                              data-bs-toggle="tooltip" data-bs-placement="top" title="Select an available 30-minute time slot between 9 AM and 3 PM">
                         <option value="" disabled selected>Select a time slot...</option>
                         <option value="09:00">9:00 AM</option>
                         <option value="09:30">9:30 AM</option>
@@ -259,14 +319,15 @@
                         <option value="14:30">2:30 PM</option>
                         <option value="15:00">3:00 PM</option>
                       </select>
+                      <div class="invalid-feedback" id="time-error">Please select a time slot.</div>
                     </div>
                   </div>
                 </fieldset>
 
-                <!-- Step 3: Contact Info -->
+                <!-- Step 4: Contact Info -->
                 <fieldset class="mb-4">
                   <legend class="h5 fw-bold border-bottom pb-2 mb-3">
-                    <span class="badge bg-warning text-dark me-2">3</span>Your Information
+                    <span class="badge bg-warning text-dark me-2">4</span><i class="bi bi-person-lines-fill me-1"></i>Your Information
                   </legend>
 
                   <div class="row g-3">
@@ -274,31 +335,96 @@
                       <label for="fname" class="form-label fw-semibold">
                         <i class="bi bi-person text-warning me-1"></i>First Name
                       </label>
-                      <input type="text" class="form-control" id="fname" name="fname" placeholder="Jane" required>
+                      <input type="text" class="form-control" id="fname" name="fname" placeholder="Jane" required
+                             pattern="^[A-Za-z\s\-']+$"
+                             data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your first name (letters, spaces, hyphens, and apostrophes only)">
+                      <div class="invalid-feedback" id="fname-error">First name must contain only letters (no numbers or special characters).</div>
                     </div>
                     <div class="col-12 col-sm-6">
                       <label for="lname" class="form-label fw-semibold">
                         <i class="bi bi-person text-warning me-1"></i>Last Name
                       </label>
-                      <input type="text" class="form-control" id="lname" name="lname" placeholder="Doe" required>
+                      <input type="text" class="form-control" id="lname" name="lname" placeholder="Doe" required
+                             pattern="^[A-Za-z\s\-']+$"
+                             data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your last name (letters, spaces, hyphens, and apostrophes only)">
+                      <div class="invalid-feedback" id="lname-error">Last name must contain only letters (no numbers or special characters).</div>
                     </div>
                     <div class="col-12 col-sm-6">
                       <label for="email" class="form-label fw-semibold">
                         <i class="bi bi-envelope text-warning me-1"></i>Email
                       </label>
-                      <input type="email" class="form-control" id="email" name="email" placeholder="jane@example.com" required>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="jane@example.com" required
+                             data-bs-toggle="tooltip" data-bs-placement="top" title="We'll send your booking confirmation to this email address">
+                      <div class="invalid-feedback">Please enter a valid email address (e.g. jane@example.com).</div>
                     </div>
                     <div class="col-12 col-sm-6">
                       <label for="phone" class="form-label fw-semibold">
                         <i class="bi bi-telephone text-warning me-1"></i>Phone
                       </label>
-                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="(613) 555-0123" required>
+                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="(613) 555-0123" required
+                             pattern="^\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{4}$"
+                             data-bs-toggle="tooltip" data-bs-placement="top" title="Enter a 10-digit phone number, e.g. (613) 555-0123 or 6135550123">
+                      <div class="invalid-feedback" id="phone-error">Please enter a valid phone number (e.g. (613) 555-0123).</div>
                     </div>
                     <div class="col-12">
                       <label for="notes" class="form-label fw-semibold">
                         <i class="bi bi-chat-left-text text-warning me-1"></i>Notes <span class="text-muted fw-normal">(optional)</span>
                       </label>
-                      <textarea class="form-control" id="notes" name="notes" rows="3" placeholder="Any specific issues with your bike..."></textarea>
+                      <textarea class="form-control" id="notes" name="notes" rows="3" placeholder="Any specific issues with your bike..."
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Describe any specific problems or requests for the mechanic"></textarea>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- Step 5: Payment -->
+                <fieldset class="mb-4" id="payment-section">
+                  <legend class="h5 fw-bold border-bottom pb-2 mb-3">
+                    <span class="badge bg-warning text-dark me-2">5</span><i class="bi bi-credit-card me-1"></i>Payment Information
+                  </legend>
+
+                  <div class="alert alert-secondary small mb-3" role="alert">
+                    <i class="bi bi-shield-lock-fill me-2"></i>Your payment information is secure. We accept Visa, MasterCard, and American Express.
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label for="card-name" class="form-label fw-semibold">
+                        <i class="bi bi-person-vcard text-warning me-1"></i>Cardholder Name
+                      </label>
+                      <input type="text" class="form-control" id="card-name" name="card-name" placeholder="Jane Doe" required
+                             pattern="^[A-Za-z\s\-']+$"
+                             data-bs-toggle="tooltip" data-bs-placement="top" title="Enter the name exactly as it appears on your credit card">
+                      <div class="invalid-feedback">Cardholder name must contain only letters.</div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label for="card-number" class="form-label fw-semibold">
+                        <i class="bi bi-credit-card-2-front text-warning me-1"></i>Card Number
+                      </label>
+                      <input type="text" class="form-control" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required
+                             maxlength="19"
+                             pattern="^\d{4}\s?\d{4}\s?\d{4}\s?\d{4}$"
+                             data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your 16-digit card number (e.g. 1234 5678 9012 3456)">
+                      <div class="invalid-feedback" id="card-number-error">Please enter a valid 16-digit card number.</div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                      <label for="card-expiry" class="form-label fw-semibold">
+                        <i class="bi bi-calendar-event text-warning me-1"></i>Expiry
+                      </label>
+                      <input type="text" class="form-control" id="card-expiry" name="card-expiry" placeholder="MM/YY" required
+                             maxlength="5"
+                             pattern="^(0[1-9]|1[0-2])\/\d{2}$"
+                             data-bs-toggle="tooltip" data-bs-placement="top" title="Enter the expiration date in MM/YY format (e.g. 03/27)">
+                      <div class="invalid-feedback">Enter a valid expiry (MM/YY).</div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                      <label for="card-cvv" class="form-label fw-semibold">
+                        <i class="bi bi-lock text-warning me-1"></i>CVV
+                      </label>
+                      <input type="text" class="form-control" id="card-cvv" name="card-cvv" placeholder="123" required
+                             maxlength="4"
+                             pattern="^\d{3,4}$"
+                             data-bs-toggle="tooltip" data-bs-placement="top" title="The 3 or 4 digit security code on the back of your card">
+                      <div class="invalid-feedback">Enter a valid 3 or 4 digit CVV.</div>
                     </div>
                   </div>
                 </fieldset>
@@ -307,15 +433,21 @@
                 <div class="alert alert-warning d-flex align-items-start mb-4" role="alert">
                   <i class="bi bi-info-circle-fill me-2 mt-1"></i>
                   <div>
-                    <strong>Ready to submit?</strong> Please review your service, date/time, and contact info above before confirming.
+                    <strong>Ready to submit?</strong> Please review your service, mechanic, date/time, contact info, and payment details above before confirming.
                   </div>
                 </div>
 
                 <!-- Submit -->
                 <div class="text-center">
-                  <button type="submit" class="btn btn-warning btn-lg fw-bold px-5">
-                    <i class="bi bi-check-circle me-2"></i>Confirm Booking
+                  <button type="submit" class="btn btn-warning btn-lg fw-bold px-5" id="submitBtn">
+                    <i class="bi bi-check-circle me-2"></i>Confirm Booking & Pay
                   </button>
+                </div>
+
+                <!-- Form-level error summary -->
+                <div class="alert alert-danger mt-3 d-none" id="form-error-summary" role="alert">
+                  <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                  <strong>Please fix the errors above before submitting.</strong>
                 </div>
 
               </form>
@@ -326,7 +458,7 @@
     </div>
   </section>
 
-  <!-- ====== CONFIRMATION (shown via CSS :target) ====== -->
+  <!-- ====== CONFIRMATION (shown via JS) ====== -->
   <section id="confirmation" class="confirmation-section py-5">
     <div class="container">
       <div class="row justify-content-center">
@@ -336,10 +468,15 @@
               <i class="bi bi-check-circle-fill text-success display-1 mb-3"></i>
               <h2 class="fw-bold">Booking Confirmed!</h2>
               <p class="text-muted">Thank you for choosing <strong>ChainLink</strong>. We'll send a confirmation email shortly.</p>
+
+              <div class="booking-summary card bg-light mb-3" id="booking-summary">
+                <!-- Filled dynamically by JS -->
+              </div>
+
               <div class="alert alert-info" role="alert">
                 <i class="bi bi-info-circle me-2"></i>Please arrive 5 minutes early. Bring your bike and any relevant accessories.
               </div>
-              <a href="#" class="btn btn-outline-dark">
+              <a href="#" class="btn btn-outline-dark" onclick="resetForm()">
                 <i class="bi bi-arrow-left me-2"></i>Back to Top
               </a>
             </div>
@@ -363,7 +500,8 @@
           <h5 class="fw-bold"><i class="bi bi-clock text-warning me-2"></i>Store Hours</h5>
           <table class="table table-dark table-sm small mb-0">
             <tbody>
-              <tr><td>Sunday&ndash;Saturday</td><td>9:00 AM &ndash; 4:00 PM</td></tr>
+              <tr><td>Monday&ndash;Friday</td><td>9:00 AM &ndash; 4:00 PM</td></tr>
+              <tr><td>Saturday &amp; Sunday</td><td class="text-danger">Closed</td></tr>
             </tbody>
           </table>
         </div>
@@ -386,7 +524,436 @@
     </div>
   </footer>
 
-  <!-- Bootstrap 5 JS (for navbar toggler only) -->
+  <!-- ====== TOAST CONTAINER (for feedback notifications) ====== -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toast-container">
+    <div id="feedbackToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body" id="toast-message">
+          <i class="bi bi-check-circle me-2"></i>Action completed successfully.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS (for navbar toggler, tooltips, toasts) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // ====== INITIALIZE BOOTSTRAP TOOLTIPS ======
+    document.addEventListener('DOMContentLoaded', function () {
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      tooltipTriggerList.forEach(function (el) {
+        new bootstrap.Tooltip(el);
+      });
+    });
+
+    // ====== MECHANIC OFF-DAY MAP ======
+    // 0=Sunday, 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday
+    const mechanicOffDays = {
+      'Mark Dupont': 3,   // Wednesday
+      'Sarah Drake': 1,   // Monday
+      'James Martin': 5   // Friday
+    };
+
+    // ====== DATE INPUT RESTRICTIONS ======
+    const dateInput = document.getElementById('booking-date');
+    const dateHint = document.getElementById('date-hint');
+
+    // Set min date to today so past dates are blocked by the browser picker
+    const today = new Date();
+    const todayStr = today.getFullYear() + '-' +
+      String(today.getMonth() + 1).padStart(2, '0') + '-' +
+      String(today.getDate()).padStart(2, '0');
+    dateInput.setAttribute('min', todayStr);
+
+    // Listen for mechanic selection to update date hint
+    document.querySelectorAll('input[name="mechanic"]').forEach(function (radio) {
+      radio.addEventListener('change', function () {
+        const mechName = this.value;
+        const offDay = mechanicOffDays[mechName];
+        const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        dateHint.innerHTML = '<i class="bi bi-info-circle-fill me-2"></i>' +
+          '<strong>' + mechName + '</strong> is off on <strong>' + dayNames[offDay] + 's</strong> and weekends. ' +
+          'These dates are unavailable.';
+        dateHint.classList.remove('alert-info');
+        dateHint.classList.add('alert-warning');
+
+        // Highlight the selected expert card
+        document.querySelectorAll('.expert-select-card').forEach(function (card) {
+          card.classList.remove('border-warning', 'bg-warning-subtle');
+        });
+        this.closest('.expert-select-card').classList.add('border-warning', 'bg-warning-subtle');
+
+        // Clear date if it's now invalid
+        validateDateForMechanic();
+
+        // Show toast feedback
+        showToast('info', '<i class="bi bi-person-check me-2"></i>Selected mechanic: ' + mechName);
+      });
+    });
+
+    // Validate date against selected mechanic's off-day and weekends
+    dateInput.addEventListener('change', function () {
+      validateDateForMechanic();
+      filterPastTimeSlots();
+    });
+
+    function validateDateForMechanic() {
+      if (!dateInput.value) return;
+
+      const date = new Date(dateInput.value + 'T00:00:00');
+      const now = new Date();
+      now.setHours(0, 0, 0, 0);
+
+      // Block past dates
+      if (date < now) {
+        dateInput.setCustomValidity('Cannot book a date in the past.');
+        dateInput.classList.add('is-invalid');
+        dateInput.classList.remove('is-valid');
+        document.getElementById('date-error').textContent = 'Cannot book a date in the past. Please select today or a future date.';
+        showToast('danger', '<i class="bi bi-exclamation-triangle me-2"></i>That date is in the past. Please choose a future date.');
+        return;
+      }
+
+      const selectedMechanic = document.querySelector('input[name="mechanic"]:checked');
+      if (!selectedMechanic) return;
+
+      const dayOfWeek = date.getDay();
+      const offDay = parseInt(selectedMechanic.getAttribute('data-offday'));
+
+      if (dayOfWeek === 0 || dayOfWeek === 6) {
+        // Weekend
+        dateInput.setCustomValidity('We are closed on weekends. Please select a weekday.');
+        dateInput.classList.add('is-invalid');
+        document.getElementById('date-error').textContent = 'We are closed on weekends. Please select a weekday.';
+        showToast('danger', '<i class="bi bi-exclamation-triangle me-2"></i>Weekends are unavailable. Please pick a weekday.');
+      } else if (dayOfWeek === offDay) {
+        const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        dateInput.setCustomValidity(selectedMechanic.value + ' is off on ' + dayNames[offDay] + 's.');
+        dateInput.classList.add('is-invalid');
+        document.getElementById('date-error').textContent = selectedMechanic.value + ' is off on ' + dayNames[offDay] + 's. Please choose another date.';
+        showToast('danger', '<i class="bi bi-exclamation-triangle me-2"></i>' + selectedMechanic.value + ' is not available on ' + dayNames[offDay] + 's.');
+      } else {
+        dateInput.setCustomValidity('');
+        dateInput.classList.remove('is-invalid');
+        dateInput.classList.add('is-valid');
+      }
+    }
+
+    // ====== TIME SLOT RESTRICTIONS (disable past times when today is selected) ======
+    const timeSelect = document.getElementById('booking-time');
+
+    function filterPastTimeSlots() {
+      const now = new Date();
+      const todayDate = new Date();
+      todayDate.setHours(0, 0, 0, 0);
+
+      const selectedDate = dateInput.value ? new Date(dateInput.value + 'T00:00:00') : null;
+      const isToday = selectedDate && selectedDate.getTime() === todayDate.getTime();
+
+      const currentHour = now.getHours();
+      const currentMinute = now.getMinutes();
+
+      // Reset all options first
+      Array.from(timeSelect.options).forEach(function (opt) {
+        if (opt.value === '') return; // skip placeholder
+        opt.disabled = false;
+        opt.textContent = opt.textContent.replace(' (passed)', '');
+      });
+
+      if (isToday) {
+        let anyAvailable = false;
+        Array.from(timeSelect.options).forEach(function (opt) {
+          if (opt.value === '') return;
+          const parts = opt.value.split(':');
+          const slotHour = parseInt(parts[0]);
+          const slotMinute = parseInt(parts[1]);
+
+          if (slotHour < currentHour || (slotHour === currentHour && slotMinute <= currentMinute)) {
+            opt.disabled = true;
+            opt.textContent = opt.textContent.replace(' (passed)', '') + ' (passed)';
+          } else {
+            anyAvailable = true;
+          }
+        });
+
+        // If the currently selected time is now past, clear it and show error
+        if (timeSelect.value) {
+          const selParts = timeSelect.value.split(':');
+          const selHour = parseInt(selParts[0]);
+          const selMinute = parseInt(selParts[1]);
+          if (selHour < currentHour || (selHour === currentHour && selMinute <= currentMinute)) {
+            timeSelect.value = '';
+            timeSelect.setCustomValidity('That time has already passed today. Please pick a later slot.');
+            timeSelect.classList.add('is-invalid');
+            timeSelect.classList.remove('is-valid');
+            document.getElementById('time-error').textContent = 'That time has already passed. Please select a later time slot.';
+            showToast('danger', '<i class="bi bi-exclamation-triangle me-2"></i>That time slot has already passed today.');
+            return;
+          }
+        }
+
+        if (!anyAvailable) {
+          timeSelect.setCustomValidity('No more time slots available today. Please pick another date.');
+          timeSelect.classList.add('is-invalid');
+          timeSelect.classList.remove('is-valid');
+          document.getElementById('time-error').textContent = 'All time slots for today have passed. Please choose a future date.';
+          showToast('danger', '<i class="bi bi-exclamation-triangle me-2"></i>All time slots for today have passed.');
+          return;
+        }
+      }
+
+      // If a valid time is selected, mark valid
+      if (timeSelect.value) {
+        timeSelect.setCustomValidity('');
+        timeSelect.classList.remove('is-invalid');
+        timeSelect.classList.add('is-valid');
+      }
+    }
+
+    // Run when time is selected — validate it hasn't passed
+    timeSelect.addEventListener('change', function () {
+      filterPastTimeSlots();
+    });
+
+    // ====== REAL-TIME INPUT VALIDATION ======
+
+    // Name fields: no numbers allowed
+    ['fname', 'lname', 'card-name'].forEach(function (id) {
+      const field = document.getElementById(id);
+      field.addEventListener('input', function () {
+        const nameRegex = /^[A-Za-z\s\-']+$/;
+        if (this.value === '') {
+          this.classList.remove('is-valid', 'is-invalid');
+          this.setCustomValidity('');
+        } else if (!nameRegex.test(this.value)) {
+          this.classList.add('is-invalid');
+          this.classList.remove('is-valid');
+          this.setCustomValidity('Only letters, spaces, hyphens and apostrophes are allowed.');
+        } else {
+          this.classList.add('is-valid');
+          this.classList.remove('is-invalid');
+          this.setCustomValidity('');
+        }
+      });
+    });
+
+    // Phone: regex validation
+    document.getElementById('phone').addEventListener('input', function () {
+      const phoneRegex = /^\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{4}$/;
+      if (this.value === '') {
+        this.classList.remove('is-valid', 'is-invalid');
+        this.setCustomValidity('');
+      } else if (!phoneRegex.test(this.value)) {
+        this.classList.add('is-invalid');
+        this.classList.remove('is-valid');
+        this.setCustomValidity('Enter a valid phone number e.g. (613) 555-0123');
+      } else {
+        this.classList.add('is-valid');
+        this.classList.remove('is-invalid');
+        this.setCustomValidity('');
+      }
+    });
+
+    // Email: live validation
+    document.getElementById('email').addEventListener('input', function () {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (this.value === '') {
+        this.classList.remove('is-valid', 'is-invalid');
+      } else if (!emailRegex.test(this.value)) {
+        this.classList.add('is-invalid');
+        this.classList.remove('is-valid');
+      } else {
+        this.classList.add('is-valid');
+        this.classList.remove('is-invalid');
+      }
+    });
+
+    // Card number: auto-format with spaces and regex validate
+    document.getElementById('card-number').addEventListener('input', function () {
+      // Remove non-digits, then add spaces every 4
+      let val = this.value.replace(/\D/g, '');
+      if (val.length > 16) val = val.substring(0, 16);
+      let formatted = val.replace(/(\d{4})(?=\d)/g, '$1 ');
+      this.value = formatted;
+
+      const cardRegex = /^\d{4}\s?\d{4}\s?\d{4}\s?\d{4}$/;
+      if (val === '') {
+        this.classList.remove('is-valid', 'is-invalid');
+        this.setCustomValidity('');
+      } else if (!cardRegex.test(formatted)) {
+        this.classList.add('is-invalid');
+        this.classList.remove('is-valid');
+        this.setCustomValidity('Enter a valid 16-digit card number');
+      } else {
+        this.classList.add('is-valid');
+        this.classList.remove('is-invalid');
+        this.setCustomValidity('');
+      }
+    });
+
+    // Expiry: auto-format MM/YY
+    document.getElementById('card-expiry').addEventListener('input', function () {
+      let val = this.value.replace(/\D/g, '');
+      if (val.length > 4) val = val.substring(0, 4);
+      if (val.length >= 3) {
+        val = val.substring(0, 2) + '/' + val.substring(2);
+      }
+      this.value = val;
+
+      const expiryRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;
+      if (val === '') {
+        this.classList.remove('is-valid', 'is-invalid');
+        this.setCustomValidity('');
+      } else if (!expiryRegex.test(val)) {
+        this.classList.add('is-invalid');
+        this.classList.remove('is-valid');
+        this.setCustomValidity('Enter expiry as MM/YY');
+      } else {
+        this.classList.add('is-valid');
+        this.classList.remove('is-invalid');
+        this.setCustomValidity('');
+      }
+    });
+
+    // CVV: only digits, 3-4 length
+    document.getElementById('card-cvv').addEventListener('input', function () {
+      let val = this.value.replace(/\D/g, '');
+      if (val.length > 4) val = val.substring(0, 4);
+      this.value = val;
+
+      const cvvRegex = /^\d{3,4}$/;
+      if (val === '') {
+        this.classList.remove('is-valid', 'is-invalid');
+        this.setCustomValidity('');
+      } else if (!cvvRegex.test(val)) {
+        this.classList.add('is-invalid');
+        this.classList.remove('is-valid');
+        this.setCustomValidity('Enter 3 or 4 digit CVV');
+      } else {
+        this.classList.add('is-valid');
+        this.classList.remove('is-invalid');
+        this.setCustomValidity('');
+      }
+    });
+
+    // ====== FORM SUBMISSION ======
+    document.getElementById('bookingForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      let isValid = true;
+      const errorSummary = document.getElementById('form-error-summary');
+
+      // Validate service selection
+      const serviceSelected = document.querySelector('input[name="service"]:checked');
+      const serviceError = document.getElementById('service-error');
+      if (!serviceSelected) {
+        serviceError.textContent = 'Please select a service.';
+        serviceError.style.cssText = 'display:block !important;';
+        isValid = false;
+      } else {
+        serviceError.style.cssText = 'display:none !important;';
+      }
+
+      // Validate mechanic selection
+      const mechanicSelected = document.querySelector('input[name="mechanic"]:checked');
+      const mechanicError = document.getElementById('mechanic-error');
+      if (!mechanicSelected) {
+        mechanicError.textContent = 'Please select a mechanic.';
+        mechanicError.style.cssText = 'display:block !important;';
+        isValid = false;
+      } else {
+        mechanicError.style.cssText = 'display:none !important;';
+      }
+
+      // Validate date against mechanic
+      validateDateForMechanic();
+
+      // Check all native validation
+      if (!this.checkValidity()) {
+        isValid = false;
+      }
+
+      // Show/hide validation states
+      this.classList.add('was-validated');
+
+      if (!isValid) {
+        errorSummary.classList.remove('d-none');
+        showToast('danger', '<i class="bi bi-exclamation-triangle me-2"></i>Please correct the errors in the form.');
+        // Scroll to first error
+        const firstInvalid = this.querySelector(':invalid, .is-invalid');
+        if (firstInvalid) {
+          firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          firstInvalid.focus();
+        }
+        return;
+      }
+
+      errorSummary.classList.add('d-none');
+
+      // Build confirmation summary
+      const summary = document.getElementById('booking-summary');
+      summary.innerHTML = '<div class="card-body text-start">' +
+        '<h6 class="fw-bold mb-2"><i class="bi bi-receipt text-warning me-2"></i>Booking Summary</h6>' +
+        '<p class="mb-1"><i class="bi bi-wrench text-warning me-2"></i><strong>Service:</strong> ' + serviceSelected.value + '</p>' +
+        '<p class="mb-1"><i class="bi bi-person-badge text-warning me-2"></i><strong>Mechanic:</strong> ' + mechanicSelected.value + '</p>' +
+        '<p class="mb-1"><i class="bi bi-calendar3 text-warning me-2"></i><strong>Date:</strong> ' + dateInput.value + '</p>' +
+        '<p class="mb-1"><i class="bi bi-clock text-warning me-2"></i><strong>Time:</strong> ' + document.getElementById('booking-time').options[document.getElementById('booking-time').selectedIndex].text + '</p>' +
+        '<p class="mb-1"><i class="bi bi-person text-warning me-2"></i><strong>Name:</strong> ' + document.getElementById('fname').value + ' ' + document.getElementById('lname').value + '</p>' +
+        '<p class="mb-1"><i class="bi bi-envelope text-warning me-2"></i><strong>Email:</strong> ' + document.getElementById('email').value + '</p>' +
+        '<p class="mb-0"><i class="bi bi-credit-card text-warning me-2"></i><strong>Card:</strong> **** **** **** ' + document.getElementById('card-number').value.replace(/\s/g, '').slice(-4) + '</p>' +
+        '</div>';
+
+      // Show confirmation
+      document.getElementById('confirmation').style.display = 'block';
+      document.getElementById('confirmation').scrollIntoView({ behavior: 'smooth' });
+
+      showToast('success', '<i class="bi bi-check-circle me-2"></i>Booking confirmed! Thank you for choosing ChainLink.');
+    });
+
+    // ====== TOAST HELPER ======
+    function showToast(type, message) {
+      const toastEl = document.getElementById('feedbackToast');
+      toastEl.className = 'toast align-items-center text-bg-' + type + ' border-0';
+      document.getElementById('toast-message').innerHTML = message;
+      var toast = new bootstrap.Toast(toastEl, { delay: 3500 });
+      toast.show();
+    }
+
+    // ====== RESET FORM ======
+    function resetForm() {
+      document.getElementById('bookingForm').reset();
+      document.getElementById('bookingForm').classList.remove('was-validated');
+      document.getElementById('confirmation').style.display = 'none';
+      document.getElementById('form-error-summary').classList.add('d-none');
+
+      // Clear validation classes
+      document.querySelectorAll('.is-valid, .is-invalid').forEach(function (el) {
+        el.classList.remove('is-valid', 'is-invalid');
+      });
+      // Clear expert card highlights
+      document.querySelectorAll('.expert-select-card').forEach(function (card) {
+        card.classList.remove('border-warning', 'bg-warning-subtle');
+      });
+      // Reset date hint
+      dateHint.innerHTML = '<i class="bi bi-info-circle-fill me-2"></i>Please select a mechanic first to see available dates. Weekends and off-days are unavailable.';
+      dateHint.classList.remove('alert-warning');
+      dateHint.classList.add('alert-info');
+
+      // Hide error displays
+      document.getElementById('service-error').style.cssText = 'display:none !important;';
+      document.getElementById('mechanic-error').style.cssText = 'display:none !important;';
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // ====== SERVICE SELECTION FEEDBACK ======
+    document.querySelectorAll('input[name="service"]').forEach(function (radio) {
+      radio.addEventListener('change', function () {
+        document.getElementById('service-error').style.cssText = 'display:none !important;';
+        showToast('info', '<i class="bi bi-wrench me-2"></i>Selected service: ' + this.value);
+      });
+    });
+  </script>
 </body>
 </html>

@@ -20,10 +20,156 @@ html {
   border: 3px solid #ffc107;
 }
 
-/* Confirmation section: hidden until #confirmation is targeted */
+/* Smaller team photos in booking form expert select */
+.team-photo-sm {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 2px solid #ffc107;
+}
+
+/* Confirmation section: hidden by default */
 .confirmation-section {
   display: none;
 }
-.confirmation-section:target {
-  display: block;
+
+/* ====== REACTIVE INPUT FIELDS (Visibility & Affordance) ====== */
+
+/* Hover: highlight border and add subtle shadow */
+.form-control:hover,
+.form-select:hover {
+  border-color: #ffc107;
+  box-shadow: 0 0 0 0.15rem rgba(255, 193, 7, 0.25);
+}
+
+/* Focus: stronger gold border, larger shadow, slight scale */
+.form-control:focus,
+.form-select:focus {
+  border-color: #ffc107;
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.35);
+  transform: scale(1.01);
+  transition: all 0.2s ease;
+}
+
+/* Smooth transition on all form controls */
+.form-control,
+.form-select {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Valid state: green border */
+.form-control.is-valid,
+.form-select.is-valid {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.2);
+}
+
+/* Invalid state: red border with shake animation */
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.2);
+  animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+/* ====== EXPERT SELECTION CARDS ====== */
+
+.expert-select-card {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.expert-select-card:hover {
+  border-color: #ffc107 !important;
+  background-color: rgba(255, 193, 7, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.expert-select-card.border-warning {
+  border-width: 2px !important;
+}
+
+/* Hide the actual radio in expert cards, style via card */
+.expert-select-card .form-check-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* ====== SERVICE CARDS (hover effect) ====== */
+
+.service-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ====== EXPERT TEAM CARDS (hover effect) ====== */
+
+.expert-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.expert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ====== RADIO BUTTON STYLING ====== */
+
+.form-check-input:checked {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.35);
+}
+
+/* ====== NAVBAR ACTIVE LINK HIGHLIGHT ====== */
+
+.navbar-nav .nav-link {
+  transition: color 0.2s ease, background-color 0.2s ease;
+  border-radius: 4px;
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+  background-color: rgba(255, 193, 7, 0.1);
+}
+
+/* ====== BUTTON HOVER ENHANCEMENTS ====== */
+
+.btn-warning {
+  transition: all 0.2s ease;
+}
+
+.btn-warning:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+}
+
+/* ====== BOOKING SUMMARY CARD ====== */
+
+.booking-summary {
+  text-align: left;
+}
+
+/* ====== TOAST POSITIONING ====== */
+
+.toast-container {
+  z-index: 1100;
 }
