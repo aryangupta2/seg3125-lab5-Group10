@@ -6,6 +6,41 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// ====== SUBMIT BUTTON TOGGLE ======
+const submitBtn = document.getElementById('submitBtn');
+submitBtn.disabled = true;
+
+function toggleSubmitButton() {
+  const form = document.getElementById('bookingForm');
+
+  // Check radio selections
+  const serviceSelected = document.querySelector('input[name="service"]:checked');
+  const mechanicSelected = document.querySelector('input[name="mechanic"]:checked');
+
+  // Check required text/select fields have values
+  const date = document.getElementById('booking-date').value;
+  const time = document.getElementById('booking-time').value;
+  const fname = document.getElementById('fname').value;
+  const lname = document.getElementById('lname').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const cardName = document.getElementById('card-name').value;
+  const cardNumber = document.getElementById('card-number').value;
+  const cardExpiry = document.getElementById('card-expiry').value;
+  const cardCvv = document.getElementById('card-cvv').value;
+
+  const allFilled = serviceSelected && mechanicSelected && date && time &&
+    fname && lname && email && phone && cardName && cardNumber && cardExpiry && cardCvv;
+
+  // Check no fields have validation errors
+  const hasErrors = form.querySelector('.is-invalid') !== null;
+
+  // Check native validity (pattern mismatches, etc.)
+  const nativeValid = form.checkValidity();
+
+  submitBtn.disabled = !(allFilled && !hasErrors && nativeValid);
+}
+
 // ====== MECHANIC OFF-DAY MAP ======
 // 0=Sunday, 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday
 const mechanicOffDays = {
@@ -48,6 +83,7 @@ document.querySelectorAll('input[name="mechanic"]').forEach(function (radio) {
 
     // Show toast feedback
     showToast('info', '<i class="bi bi-person-check me-2"></i>Selected mechanic: ' + mechName);
+    toggleSubmitButton();
   });
 });
 
@@ -55,6 +91,7 @@ document.querySelectorAll('input[name="mechanic"]').forEach(function (radio) {
 dateInput.addEventListener('change', function () {
   validateDateForMechanic();
   filterPastTimeSlots();
+  toggleSubmitButton();
 });
 
 function validateDateForMechanic() {
@@ -173,6 +210,7 @@ function filterPastTimeSlots() {
 // Run when time is selected — validate it hasn't passed
 timeSelect.addEventListener('change', function () {
   filterPastTimeSlots();
+  toggleSubmitButton();
 });
 
 // ====== REAL-TIME INPUT VALIDATION ======
@@ -194,6 +232,7 @@ timeSelect.addEventListener('change', function () {
       this.classList.remove('is-invalid');
       this.setCustomValidity('');
     }
+    toggleSubmitButton();
   });
 });
 
@@ -212,6 +251,7 @@ document.getElementById('phone').addEventListener('input', function () {
     this.classList.remove('is-invalid');
     this.setCustomValidity('');
   }
+  toggleSubmitButton();
 });
 
 // Email: live validation
@@ -226,6 +266,7 @@ document.getElementById('email').addEventListener('input', function () {
     this.classList.add('is-valid');
     this.classList.remove('is-invalid');
   }
+  toggleSubmitButton();
 });
 
 // Card number: auto-format with spaces and regex validate
@@ -249,6 +290,7 @@ document.getElementById('card-number').addEventListener('input', function () {
     this.classList.remove('is-invalid');
     this.setCustomValidity('');
   }
+  toggleSubmitButton();
 });
 
 // Expiry: auto-format MM/YY
@@ -289,6 +331,7 @@ document.getElementById('card-expiry').addEventListener('input', function () {
       document.querySelector('#card-expiry ~ .invalid-feedback').textContent = 'Enter a valid expiry (MM/YY).';
     }
   }
+  toggleSubmitButton();
 });
 
 // CVV: only digits, 3-4 length
@@ -310,6 +353,7 @@ document.getElementById('card-cvv').addEventListener('input', function () {
     this.classList.remove('is-invalid');
     this.setCustomValidity('');
   }
+  toggleSubmitButton();
 });
 
 // ====== FORM SUBMISSION ======
@@ -418,6 +462,7 @@ function resetForm() {
   document.getElementById('service-error').style.cssText = 'display:none !important;';
   document.getElementById('mechanic-error').style.cssText = 'display:none !important;';
 
+  submitBtn.disabled = true;
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -426,5 +471,6 @@ document.querySelectorAll('input[name="service"]').forEach(function (radio) {
   radio.addEventListener('change', function () {
     document.getElementById('service-error').style.cssText = 'display:none !important;';
     showToast('info', '<i class="bi bi-wrench me-2"></i>Selected service: ' + this.value);
+    toggleSubmitButton();
   });
 });
