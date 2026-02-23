@@ -269,9 +269,25 @@ document.getElementById('card-expiry').addEventListener('input', function () {
     this.classList.remove('is-valid');
     this.setCustomValidity('Enter expiry as MM/YY');
   } else {
-    this.classList.add('is-valid');
-    this.classList.remove('is-invalid');
-    this.setCustomValidity('');
+    // Check if the expiry date is in the past
+    const parts = val.split('/');
+    const expMonth = parseInt(parts[0]);
+    const expYear = parseInt(parts[1]) + 2000;
+    const now = new Date();
+    const currentMonth = now.getMonth() + 1;
+    const currentYear = now.getFullYear();
+
+    if (expYear < currentYear || (expYear === currentYear && expMonth < currentMonth)) {
+      this.classList.add('is-invalid');
+      this.classList.remove('is-valid');
+      this.setCustomValidity('Card has expired. Please enter a future expiry date.');
+      document.querySelector('#card-expiry ~ .invalid-feedback').textContent = 'Card has expired. Please enter a future expiry date.';
+    } else {
+      this.classList.add('is-valid');
+      this.classList.remove('is-invalid');
+      this.setCustomValidity('');
+      document.querySelector('#card-expiry ~ .invalid-feedback').textContent = 'Enter a valid expiry (MM/YY).';
+    }
   }
 });
 
