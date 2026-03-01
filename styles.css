@@ -79,8 +79,19 @@ html {
 
 /* ====== EXPERT SELECTION CARDS ====== */
 
-.expert-select-card {
+.expert-select-card,
+.expert-select-card * {
   cursor: pointer;
+}
+
+.expert-select-card {
+  transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.expert-select-card:hover {
+  border-color: #ffc107 !important;
+  background-color: rgba(255, 193, 7, 0.08);
+  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.25);
 }
 
 .expert-select-card.border-warning {
@@ -116,9 +127,51 @@ html {
   border-radius: 4px;
   padding-left: 0.75rem !important;
   padding-right: 0.75rem !important;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+  background-color: rgba(255, 193, 7, 0.1);
 }
 
 /* ====== BUTTON STYLING ====== */
+
+.btn-warning {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-warning:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+}
+
+.btn-outline-dark {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-outline-dark:hover {
+  transform: translateY(-1px);
+}
+
+/* Booking form: service and expert options feel clickable */
+#bookingForm .form-check {
+  transition: background-color 0.2s ease, border-radius 0.2s ease;
+}
+
+#bookingForm .form-check:hover {
+  background-color: rgba(255, 193, 7, 0.06);
+  border-radius: 6px;
+}
+
+/* Footer links */
+footer a.text-white-50 {
+  transition: color 0.2s ease;
+}
+
+footer a.text-white-50:hover {
+  color: #ffc107 !important;
+}
 
 /* ====== BOOKING SUMMARY CARD ====== */
 
