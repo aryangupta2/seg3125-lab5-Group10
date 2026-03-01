@@ -35,13 +35,6 @@ html {
 
 /* ====== REACTIVE INPUT FIELDS (Visibility & Affordance) ====== */
 
-/* Hover: highlight border and add subtle shadow */
-.form-control:hover,
-.form-select:hover {
-  border-color: #ffc107;
-  box-shadow: 0 0 0 0.15rem rgba(255, 193, 7, 0.25);
-}
-
 /* Focus: stronger gold border, larger shadow, slight scale */
 .form-control:focus,
 .form-select:focus {
@@ -88,14 +81,6 @@ html {
 
 .expert-select-card {
   cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.expert-select-card:hover {
-  border-color: #ffc107 !important;
-  background-color: rgba(255, 193, 7, 0.08);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .expert-select-card.border-warning {
@@ -110,27 +95,9 @@ html {
   height: 0;
 }
 
-/* ====== SERVICE CARDS (hover effect) ====== */
+/* ====== SERVICE CARDS ====== */
 
-.service-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
-}
-
-/* ====== EXPERT TEAM CARDS (hover effect) ====== */
-
-.expert-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.expert-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
-}
+/* ====== EXPERT TEAM CARDS ====== */
 
 /* ====== RADIO BUTTON STYLING ====== */
 
@@ -146,27 +113,12 @@ html {
 /* ====== NAVBAR ACTIVE LINK HIGHLIGHT ====== */
 
 .navbar-nav .nav-link {
-  transition: color 0.2s ease, background-color 0.2s ease;
   border-radius: 4px;
   padding-left: 0.75rem !important;
   padding-right: 0.75rem !important;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #ffc107 !important;
-  background-color: rgba(255, 193, 7, 0.1);
-}
-
-/* ====== BUTTON HOVER ENHANCEMENTS ====== */
-
-.btn-warning {
-  transition: all 0.2s ease;
-}
-
-.btn-warning:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
-}
+/* ====== BUTTON STYLING ====== */
 
 /* ====== BOOKING SUMMARY CARD ====== */
 
